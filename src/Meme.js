@@ -9,7 +9,8 @@ class Meme extends React.Component {
             id: this.props.id,
             upvotes: this.props.upvotes,
             downvotes: this.props.downvotes,
-            score: this.props.upvotes - this.props.downvotes
+            score: this.props.upvotes - this.props.downvotes,
+            isHot: this.props.upvotes - this.props.downvotes > 5 ? true : false
         }
     }
 
@@ -34,17 +35,17 @@ class Meme extends React.Component {
             this.props.updateList(this.state.id, this.state.upvotes, this.state.downvotes);
         }
 
-        return (
+        return (            
+            this.state.isHot ?
             <div>
                 <img className="meme" src={`../memes/${this.state.id}.jpg`} alt="Coś się popsuło"></img>
-                <table>
-                    <tr>
-                        <td><button onClick={upvoteClick} className="btn-upvote" type="button">▲ {this.state.upvotes}</button></td>
-                        <td>{this.state.score}</td>
-                        <td><button onClick={downvoteClick} className="btn-downvote" type="button">▼ {this.state.downvotes}</button></td>
-                    </tr>
-                </table>
-            </div>
+                <div className="memeButtons">
+                    <button onClick={upvoteClick} className="btn-upvote" type="button">▲ {this.state.upvotes}</button>
+                    {this.state.score}
+                    <button onClick={downvoteClick} className="btn-downvote" type="button">▼ {this.state.downvotes}</button>
+                </div>
+            </div> 
+            : null
         )
     }
 }

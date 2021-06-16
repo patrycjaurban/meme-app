@@ -24,23 +24,25 @@ export default function App() {
             </ul>
           </div>
         </nav >
-        <Switch>
-          <Route path="/hot">
-            <Hot />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <body className="App-body">
+          <Switch>
+            <Route path="/hot">
+              <Hot />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </body>
       </div >
     </Router >
   );
 }
 
 function Home() {
-  return <MemeList minScore="-10" />
+  return <MemeList/>
 }
 
 function Hot() {
-  return <MemeList minScore="5" />
+  return <MemeList/>
 }

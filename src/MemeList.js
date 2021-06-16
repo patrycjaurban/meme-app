@@ -72,7 +72,7 @@ class MemeList extends React.Component {
                 "id": "13",
                 "upvotes": 10,
                 "downvotes": 0
-              }]
+            }]
         };
     }
 
@@ -89,13 +89,9 @@ class MemeList extends React.Component {
                     this.state.list.map(meme => {
                         return (
                             <div className="App">
-                                <body className="App-body">
-                                    {
-                                        meme.upvotes - meme.downvotes > this.props.minScore ?
-                                            <Meme updateList={this.updateList} id={meme.id} upvotes={meme.upvotes} downvotes={meme.downvotes} />
-                                            : null
-                                    }
-                                </body>
+                                {
+                                    <Meme updateList={this.updateList} id={meme.id} upvotes={meme.upvotes} downvotes={meme.downvotes} />
+                                }
                             </div>
                         )
                     })
