@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/meme-app/static/css/main.9eb49a7f.chunk.css",
+    "main.js": "/meme-app/static/js/main.7639bc4b.chunk.js",
+    "main.js.map": "/meme-app/static/js/main.7639bc4b.chunk.js.map",
+    "runtime-main.js": "/meme-app/static/js/runtime-main.8faeccec.js",
+    "runtime-main.js.map": "/meme-app/static/js/runtime-main.8faeccec.js.map",
+    "static/js/2.77d67bc6.chunk.js": "/meme-app/static/js/2.77d67bc6.chunk.js",
+    "static/js/2.77d67bc6.chunk.js.map": "/meme-app/static/js/2.77d67bc6.chunk.js.map",
+    "index.html": "/meme-app/index.html",
+    "static/css/main.9eb49a7f.chunk.css.map": "/meme-app/static/css/main.9eb49a7f.chunk.css.map",
+    "static/js/2.77d67bc6.chunk.js.LICENSE.txt": "/meme-app/static/js/2.77d67bc6.chunk.js.LICENSE.txt",
+    "static/media/logo.b5c56cf6.png": "/meme-app/static/media/logo.b5c56cf6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8faeccec.js",
+    "static/js/2.77d67bc6.chunk.js",
+    "static/css/main.9eb49a7f.chunk.css",
+    "static/js/main.7639bc4b.chunk.js"
+  ]
+}
